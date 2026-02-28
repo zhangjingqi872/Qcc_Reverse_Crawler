@@ -7,6 +7,10 @@
 
 关键：GET 请求的 path 必须包含完整 query 并整体小写，data 传空对象 {}
 """
+﻿# author：人生如寄
+# date：2026/02/28
+# description：企查查“查招聘”网站关键词搜索结果显示
+# note：需要填写自己的账号cookie
 
 import execjs
 import requests
@@ -160,4 +164,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
