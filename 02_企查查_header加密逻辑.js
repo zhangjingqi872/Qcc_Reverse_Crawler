@@ -1,3 +1,4 @@
+// 02_企查查_header加密逻辑.js是根据 Jmiao11/Qichacha_Reverse_Crawler 中的同名文件进行微调
 a = {
     "default": {
         "options": {
@@ -105,3 +106,4 @@ aa = function(e) {
 // a.default.codes = mapping
 
 function main (e){return aa(e)}
+
