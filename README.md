@@ -6,9 +6,9 @@
 `test-mutipage.py` 文件为多页限定城市、限定每页显示条数、限制抓取页数的逆向测试文件。<br>
 *以上两个文件可测试运行，其余文件为  Jmiao11/Qichacha_Reverse_Crawler** 的微调同名文件，意义与原项目文件相同*
 ### 结果输出
-#### `test.py`输出：
+####  `test.py`输出：
 <img width="1444" height="584" alt="image" src="https://github.com/user-attachments/assets/c4a6478a-f8ae-46fc-b627-b3a9d3a03d46" />
-#### `test-mutipage.py`生成的结果文件：
+####  `test-mutipage.py`生成的结果文件：
 
 ``` json
   {
