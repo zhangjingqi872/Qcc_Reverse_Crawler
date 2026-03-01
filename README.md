@@ -10,6 +10,7 @@
 
 ``` json
   {
+//显示部分
   "total": 200,
   "totalRecords": 12244,
   "list": [
@@ -30,7 +31,6 @@
       "ExperienceCode": 3,
       "SalaryCode": 3
     },
-    // ...
   ]
 }
 ```
