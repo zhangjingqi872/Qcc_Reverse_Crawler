@@ -30,6 +30,9 @@
       "ExperienceCode": 3,
       "SalaryCode": 3
     },
+    ...
+]
+}
 ```
   ####  `test.py` 输出：
 <img width="1444" height="584" alt="image" src="https://github.com/user-attachments/assets/c4a6478a-f8ae-46fc-b627-b3a9d3a03d46" />
