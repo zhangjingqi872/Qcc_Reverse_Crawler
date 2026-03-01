@@ -30,8 +30,8 @@
       "ExperienceCode": 3,
       "SalaryCode": 3
     },
-    ...
-]
+    // ...
+  ]
 }
 ```
   ####  `test.py` 输出：
