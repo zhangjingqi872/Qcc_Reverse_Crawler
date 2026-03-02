@@ -1,6 +1,9 @@
 # Qcc_Reverse_Crawler
 关于企查查网站中“查招聘”板块官网的搜索结果爬虫逆向学习记录。
 <br> 参考github网站上 **Jmiao11/Qichacha_Reverse_Crawler** 的作品。<br> 
+### 网站预览
+<img width="1858" height="910" alt="image" src="https://github.com/user-attachments/assets/96923f22-8c34-451c-9253-6a834a86fc7f" />
+<br> 
 ### 文件说明
 `test.py` 文件为单页无限制条件的逆向测试文件。<br>
 `test-mutipage.py` 文件为多页限定城市、限定每页显示条数、限制抓取页数的逆向测试文件。<br>
