@@ -11,6 +11,32 @@
 本项目对企查查 **查招聘**（`/web/bigsearch/recruit`）的接口进行逆向分析，复现其请求头中的动态签名（`i` / `u`），使用 Python + execjs 调用本地 JS 生成签名，通过 `GET /api/bigsearch/recruit` 获取招聘列表 JSON。支持**城市筛选**（如上海 city=3101）、**每页条数**（如 40 条）、**多页翻页**；签名逻辑与浏览器一致（path 含完整 query 并小写、参数字母序、第一页不传 pageIndex、翻页 referer 带 `&p=页码`），结果可保存为 JSON 文件。
 
 ---
+
+## 环境依赖
+
+- **Python 3.7+**
+- 需通过 pip 安装的库见下表，或直接使用项目中的 `requirements.txt` 一键安装。
+
+| 库名 | 说明 |
+|------|------|
+| `PyExecJS` | 执行 `02_企查查_header加密逻辑.js` 中的签名逻辑，生成请求头 `i` / `u`。 |
+| `requests` | 发送 HTTP 请求。 |
+| `lxml` | 解析 recruit 页面 HTML，提取 `window.pid`。 |
+
+**安装方式：**
+
+```bash
+# 方式一：按 requirements.txt 安装（推荐）
+pip install -r requirements.txt
+
+# 方式二：单独安装
+pip install PyExecJS requests lxml
+```
+
+> **说明**：PyExecJS 会调用系统里的 JavaScript 引擎。Windows 下通常使用已安装的 **Node.js**，若未安装请先安装 [Node.js](https://nodejs.org/)，否则运行脚本时可能报错。
+
+---
+
 ## 网站预览
 
 <img width="1858" height="910" alt="image" src="https://github.com/user-attachments/assets/96923f22-8c34-451c-9253-6a834a86fc7f" />
