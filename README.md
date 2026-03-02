@@ -1,14 +1,18 @@
 # Qcc_Reverse_Crawler
+
 关于企查查网站中「查招聘」板块官网的搜索结果爬虫逆向学习记录。
+
 参考 GitHub 项目 [Jmiao11/Qichacha_Reverse_Crawler](https://github.com/Jmiao11/Qichacha_Reverse_Crawler)。
 
 ---
 
 ## 项目概述
+
 本项目对企查查 **查招聘**（`/web/bigsearch/recruit`）的接口进行逆向分析，复现其请求头中的动态签名（`i` / `u`），使用 Python + execjs 调用本地 JS 生成签名，通过 `GET /api/bigsearch/recruit` 获取招聘列表 JSON。支持**城市筛选**（如上海 city=3101）、**每页条数**（如 40 条）、**多页翻页**；签名逻辑与浏览器一致（path 含完整 query 并小写、参数字母序、第一页不传 pageIndex、翻页 referer 带 `&p=页码`），结果可保存为 JSON 文件。
 
 ---
 ## 网站预览
+
 <img width="1858" height="910" alt="image" src="https://github.com/user-attachments/assets/96923f22-8c34-451c-9253-6a834a86fc7f" />
 
 ---
@@ -28,8 +32,11 @@
 ---
 
 ## 结果输出
-  ###  `test-mutipage.py` 生成的结果文件(部分数据）：
+
+###  `test-mutipage.py` 生成的结果文件(部分数据）：
+
 结果保存在 **recruit_result.json**，结构如下：
+
 ```json
 {
   "total": 200,
@@ -61,10 +68,13 @@
 - **list**：招聘列表，字段含义与官网一致（公司名、职位、薪资、城市等）
 
 ---
-  ###  `test.py` 输出：
+
+###  `test.py` 输出：
+  
 <img width="1444" height="584" alt="image" src="https://github.com/user-attachments/assets/c4a6478a-f8ae-46fc-b627-b3a9d3a03d46" />
 
 ---
+
 ## 使用步骤
 
 1. 浏览器打开 `https://www.qcc.com/web/bigsearch/recruit?searchKey=体育`，确保能正常看到列表。
