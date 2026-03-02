@@ -84,4 +84,4 @@
 4. 运行 `python test-mutipage.py`（或 `python test.py`），按提示输入 Cookie、tid、关键字、城市、每页条数、最多抓取页数等。
 5. 多页结果将写入当前目录下的 **recruit_result.json**。
 
-更多细节（如 435 错误排查、第一页不传 pageIndex、参数顺序与 referer 等）见 **企查查招聘接口逆向说明.md**。
+⚠️更多细节（如 435 错误排查、第一页不传 pageIndex、参数顺序与 referer 等）见 **企查查招聘接口逆向说明.md**。
