@@ -1,6 +1,6 @@
 # Qcc_Reverse_Crawler
 
-关于企查查网站中「查招聘」板块官网的搜索结果爬虫逆向学习记录。
+关于企查查网站中「查招聘」板块官网的搜索结果爬虫逆向学习记录。<br />
 
 参考 GitHub 项目 [Jmiao11/Qichacha_Reverse_Crawler](https://github.com/Jmiao11/Qichacha_Reverse_Crawler)。
 
@@ -29,6 +29,7 @@
 | `new_qichacha.js` | 原始前端打包 JS，用于对照分析签名逻辑。 |
 
 *以上两个测试脚本可直接运行；其余文件为对参考项目的微调或补充，用途与原项目对应文件一致。*
+
 ---
 
 ## 结果输出
