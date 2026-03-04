@@ -4,6 +4,8 @@
 
 参考 GitHub 项目 [Jmiao11/Qichacha_Reverse_Crawler](https://github.com/Jmiao11/Qichacha_Reverse_Crawler)。
 
+仅限个人学习开发使用。
+
 ---
 
 ## 项目概述
