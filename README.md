@@ -16,6 +16,15 @@
 
 - **Python 3.7+**
 - 需通过 pip 安装的库见下表，或直接使用项目中的 `requirements.txt` 一键安装。
+- **Node.js**
+- 按照以下方法测试：
+  
+  ```python
+  import execjs
+  print(execjs.get().name)
+  # 应输出 Node / Node.js
+  # 若输出 JScript / Microsoft JScript 那就是没识别到 Node.js，需要重开一下 IDE 或者重装 Node.js
+  ```
 
 | 库名 | 说明 |
 |------|------|
